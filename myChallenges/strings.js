@@ -1,16 +1,27 @@
-// ## Concatenate Strings #2
+// ## Strings #8
 
-// 1. create "street" and "country" variables
-// 2. assign your values
-// 3. create "fullMailingAddress" variable and assign
-//    the result of "street + country"
-// 4. remember about the space
-// 5. log "fullMailingAddress" in the console
+// 1. create function fullName
+// 2. accept two parameters "firstName", "lastName"
+// 3. add them together (concat) and return result in uppercase
+// 4. invoke fullName and pass some values
+// 5. log result
+// 6. change the order of arguments
+// 7. refactor to object parameter
 
-let street = "Samtgasse";
-let country = "Austria";
+// function fullName(firstName, lastName){
+//     //console.log(`Your fullname is: ${firstName.toUpperCase()} ${lastName.toUpperCase()}`);
+//     const fullName = `${firstName} ${lastName}`;
+//     return fullName.toUpperCase();
+// }   
+// console.log(fullName("Haider", "Frank"));
 
-let fullMailingAddress = `Ich wohne in ${street} ${country}`;
-fullMailingAddress = "ICh wohne in " + street + " " + country;
 
-console.log(fullMailingAddress);
+
+//refactor to object
+
+function fullName({firstName, lastName}){
+    const fullName = `${firstName} ${lastName}`;
+    return fullName.toUpperCase();
+}   
+
+console.log(fullName({lastName:"Haider", firstName:"Frank"}));
