@@ -52,3 +52,9 @@
 
 // console.log(items);
 // console.log(betterItems);
+
+//Tutorial getElementsByClassName
+
+// const listItems = document.getElementsByClassName("special");
+// listItems[2].style.color = "blue";
+// console.log(listItems);
