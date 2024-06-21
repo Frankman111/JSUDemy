@@ -4,7 +4,8 @@
 //alert("Hello")
 //console.dir(document);
 
-// Tutorial getElementById
+                                                // Tutorial getElementById
+
 //select the element or group of elements the we want 
 // decide the effect we want to apply to the selection
 
@@ -22,7 +23,7 @@
 
 
 
-// Tutorial getElementsByTagName
+                                                // Tutorial getElementsByTagName    
 
 // getElementsByTagName("tagname")
 // HTMLCollection = array-like object
@@ -53,8 +54,33 @@
 // console.log(items);
 // console.log(betterItems);
 
-//Tutorial getElementsByClassName
+                                                    //Tutorial getElementsByClassName
 
 // const listItems = document.getElementsByClassName("special");
 // listItems[2].style.color = "blue";
 // console.log(listItems);
+
+                                                    //Tutorial querySelector
+
+//querySelector("any css"); -> selects single
+//querySelectorAll("any css") -> selects all
+
+const result = document.querySelector("#result");
+
+result.style.backgroundColor = "blue";
+
+const item = document.querySelector(".special");
+
+// console.log(item); // returns the first element
+
+const lastItem = document.querySelector("li:last-child");
+// console.log(lastItem);
+
+const list = document.querySelectorAll(".special");
+//console.log(list);
+
+list.forEach(function(item){
+    console.log(item);
+    item.style.color = "yellow";
+});
+
