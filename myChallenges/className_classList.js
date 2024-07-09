@@ -14,8 +14,8 @@ second.className = "text"; // overwrites the first className
 
 second.className = "colors text"; // all classes are active
 
-third.classList.add("colors","text"); // allows to add the classes upon another line
-third.classList.remove("text");
+third.classList.add("colors", "text"); // allows to add the classes upon another line
+//third.classList.remove("text");
 
 let result = third.classList.contains("colors");
 if(result){
