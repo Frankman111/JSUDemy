@@ -4,7 +4,7 @@
 //    using MAP method
 // 2. assign to 'updatedStudents' variable and log
 
-
+//test
 const updatedStudents = students.map(function(student){
     student.role = "student";
     return student
